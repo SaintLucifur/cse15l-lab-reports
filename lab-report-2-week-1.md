@@ -35,7 +35,7 @@ Now log in with ssh, and use ls to see the file
 
 ## Settin an SSH Key
 Follow the steps to get it done!
-> ``` on client (your computer)
+``` on client (your computer)
 $ ssh-keygen
 Generating public/private rsa key pair.
 Enter file in which to save the key (/Users/username/.ssh/id_rsa): /Users/username/.ssh/id_rsa
@@ -60,7 +60,7 @@ The key's randomart image is:
 ```
 
 
-## Faster Faster Faster!
+# Faster Faster Faster!
 * you can write a command in quotes at the end of an ssh command to directly run it on the remote server, then exit. For example, this command will log in and list the home directory on the remote server:
 > $ ssh cs15lfa22@ieng6.ucsd.edu "ls"
 ![Image](faster1.png)
