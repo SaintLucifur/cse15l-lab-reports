@@ -45,7 +45,7 @@ Enter same passphrase again:
 Your identification has been saved in /Users/username/.ssh/id_rsa.
 Your public key has been saved in /Users/username/.ssh/id_rsa.pub.
 The key fingerprint is:
-SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 joe@Joes-Mac-mini.local
+SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 user@userdirectory.local
 The key's randomart image is:
 +---[RSA 3072]----+
 |                 |
