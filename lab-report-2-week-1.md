@@ -35,7 +35,8 @@ Now log in with ssh, and use ls to see the file
 
 ## Settin an SSH Key
 Follow the steps to get it done!
-``` on client (your computer)
+``` 
+on client (your computer)
 $ ssh-keygen
 Generating public/private rsa key pair.
 Enter file in which to save the key (/Users/username/.ssh/id_rsa): /Users/username/.ssh/id_rsa
