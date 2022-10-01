@@ -59,7 +59,7 @@ The key's randomart image is:
 |             ..  |
 +----[SHA256]-----+
 ```
-
+![Image](keys.png)
 
 # Faster Faster Faster!
 * you can write a command in quotes at the end of an ssh command to directly run it on the remote server, then exit. For example, this command will log in and list the home directory on the remote server:
