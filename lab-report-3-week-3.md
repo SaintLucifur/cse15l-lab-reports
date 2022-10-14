@@ -74,7 +74,7 @@ class SearchEngine {
 }
 
 ```
-Screenshot 1 (home directory page)
+**Screenshot 1 (home directory page)**
 
 ![Image](homeLab3.png)
 
@@ -92,7 +92,7 @@ Screenshot 1 (home directory page)
 
     Introduction to the server is the argument as a string to this method
 
-Screenshot 2-4 (/add?s=aStringToAdd)
+**Screenshot 2-4 (/add?s=aStringToAdd)**
 
 ![Image](add1Lab3.png)
 
@@ -113,6 +113,10 @@ Screenshot 2-4 (/add?s=aStringToAdd)
 3. getQuery()
 
     No argument is put in this method. If the input url changes, this would change as well
+
+**Screenshot 5 (/search?s=aStringToSearch)**
+
+
 ![Image](searchLab3.png)
 ![Image](noItemLab3.png)
 ![Image](invalidLab3.png)
