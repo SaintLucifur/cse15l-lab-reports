@@ -259,6 +259,8 @@ class TypeChecker implements StringChecker {
 
     assertEquals(result, ListExamples.filter(input, null));
   }
+  // There is null here because no matter what you put here, the method would make
+  // the class that does the job :)
 ```
 
 * The symptom
