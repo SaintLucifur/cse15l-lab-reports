@@ -74,5 +74,12 @@ class SearchEngine {
 }
 
 ```
-
+* Methods Called
+![Image](homeLab3.png)
+![Image](add1Lab3.png)
+![Image](add2Lab3.png)
+![Image](add3Lab3.png)
+![Image](searchLab3.png)
+![Image](noItemLab3.png)
+![Image](invalidLab3.png)
 
