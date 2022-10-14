@@ -82,17 +82,37 @@ Screenshot 1 (home directory page)
 
 1. getPath()
 
-    URL path is the argument put in this method
+    No argument is put in this method. If the input url changes, this would change as well
     
 2. equals()
 
+    "/" is the argument put in this method.
 
 3. format()
 
+    Introduction to the server is the argument as a string to this method
+
+Screenshot 2-4 (/add?s=aStringToAdd)
 
 ![Image](add1Lab3.png)
+
 ![Image](add2Lab3.png)
+
 ![Image](add3Lab3.png)
+
+* Methods Called
+
+1. getPath()
+
+    No argument is put in this method. If the input url changes, this would change as well
+
+2. contains()
+
+    "/add" is the argument to this method
+
+3. getQuery()
+
+    No argument is put in this method. If the input url changes, this would change as well
 ![Image](searchLab3.png)
 ![Image](noItemLab3.png)
 ![Image](invalidLab3.png)
