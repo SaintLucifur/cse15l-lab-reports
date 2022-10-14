@@ -81,10 +81,13 @@ class SearchEngine {
 * Methods Called
 
 1. getPath()
+
 No argument is put in this method. If the input url changes, this would change as well
 2. equals()
+
 "/" is the argument put in this method.
 3. format()
+
 Introduction to the server is the argument as a string to this method
 
 **Screenshot 2-4 (/add?s=aStringToAdd)**
@@ -98,24 +101,32 @@ Introduction to the server is the argument as a string to this method
 * Methods Called
 
 1. getPath()
+
 No argument is put in this method. If the input url changes, this would change as well
 2. contains()
+
 "/add" is the argument to this method
 3. getQuery()
+
 No argument is put in this method. If the input url changes, this would change as well
 4. split()
+
 "=" is the argument to this method. If it changes, the splitted query will vary
 5. equals()
+
 "s" is the argument put in this method. If it changes, it will be evaluted to false as the format is
 expected to be "?s="
 
 * Relevant Variables/Fields
 
 1. String[] list
+
 This variable stores the strings that are added. It has a maximum size of 50
 2. int index
+
 This variable keeps track of how many strings are put into the list
 3. String[] parameters
+
 This variable stores the splitted query
 
 **Screenshot 5 (/search?s=aStringToSearch)**
@@ -125,24 +136,32 @@ This variable stores the splitted query
 * Methods Called
 
 1. getPath()
+
 No argument is put in this method. If the input url changes, this would change as well
 2. contains()
+
 "/search" is the argument to this method
 3. getQuery()
+
 No argument is put in this method. If the input url changes, this would change as well
 4. split()
+
 "=" is the argument to this method. If it changes, the splitted query will vary
 5. equals()
+
 "s" is the argument put in this method. If it changes, it will be evaluted to false as the format is
 expected to be "?s="
 
 * Relevant Variables/Fields
 
 1. String stringsFound
+
 This variable is the concatenation of all the related strings found in list
 2. boolean hasItems
+
 This variable is true when any string is added to the list, false otherwise
 3. String[] parameters
+
 This variable stores the splitted query
 
 
