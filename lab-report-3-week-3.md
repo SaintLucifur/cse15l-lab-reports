@@ -241,12 +241,12 @@ this particular symptom.
 * My stringChecker is defined as follow
 ```
 class TypeChecker implements StringChecker {
-  public boolean checkString(String s) {
-    if(s.contains("a")) {
-      return true;
-    }
+    public boolean checkString(String s) {
+        if(s.contains("a")) {
+            return true;
+        }
     return false;
-  }
+    }
 }
 ```
 
@@ -272,4 +272,24 @@ java.lang.AssertionError: expected:<[abc, a]> but was:<[a, abc]>
         at ListTests.testFilter(ListTests.java:14)
 ```
 
+* The bug
+```
+static List<String> filter(List<String> list, StringChecker sc) {
+    TypeChecker tc = new TypeChecker();
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if((tc.checkString(s))) {
+        result.add(s);
+      }
+    }
+    return result;
+  }
+```
+
+* WHY?
+
+The reason why this bug causes this symptom is that the wrong add() method is called. 
+Since java can overload a method, we need to choose the correct parameters here, which
+should be the string only. The extra 0 would prepend the string to the front of the list,
+which changes the order of the expected output.
 
