@@ -1,5 +1,6 @@
 # Part 1 Search Engine
 * Code Block
+
 ```
 class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
@@ -71,6 +72,7 @@ class SearchEngine {
         Server.start(port, new Handler());
     }
 }
+
 ```
 
 
