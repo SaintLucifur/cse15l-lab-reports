@@ -254,33 +254,38 @@ class TypeChecker implements StringChecker {
 ```
 @Test
   public void testFilter(){
+    class TypeChecker implements StringChecker {
+      public boolean checkString(String s) {
+        if(s.contains("a")) {
+          return true;
+        }
+        return false;
+      }
+    }
     ArrayList<String> input = new ArrayList<>(Arrays.asList("a", " ", "abc", "b"));
     ArrayList<String> result = new ArrayList<>(Arrays.asList("a", "abc"));
 
-    assertEquals(result, ListExamples.filter(input, null));
+    assertEquals(result, ListExamples.filter(input, new TypeChecker()));
   }
-  // There is null here because no matter what you put here, the method would make
-  // the class that does the job :)
 ```
 
 * The symptom
 ```
 testFilter(ListTests)
-java.lang.AssertionError: expected:<[abc, a]> but was:<[a, abc]>
+java.lang.AssertionError: expected:<[a, abc]> but was:<[abc, a]>
         at org.junit.Assert.fail(Assert.java:89)
         at org.junit.Assert.failNotEquals(Assert.java:835)
         at org.junit.Assert.assertEquals(Assert.java:120)
         at org.junit.Assert.assertEquals(Assert.java:146)
-        at ListTests.testFilter(ListTests.java:14)
+        at ListTests.testFilter(ListTests.java:22)
 ```
 
 * The bug
 ```
 static List<String> filter(List<String> list, StringChecker sc) {
-    TypeChecker tc = new TypeChecker();
     List<String> result = new ArrayList<>();
     for(String s: list) {
-      if((tc.checkString(s))) {
+      if((sc.checkString(s))) {
         result.add(s);
       }
     }
