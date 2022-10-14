@@ -27,12 +27,31 @@ display the contents of one or multiple contents
 copy the contents
 
 ## Moving Files over SSH with scp
-First, create a file named moveMe.txt on **your computer** 
+First, create a file named WhereAmI.java on **your computer** with the following content in it
+
+```
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```
 Copy the file on your computer to the virtual machine by typing in
 > scp moveMe.txt cs15lfa22@ieng6.ucsd.edu:~/
 
 Now log in with ssh, and use ls to see the file
 ![Image](ssh.png)
+
+Compile and run the WhereAmI file using javac and java as follow
+
+```
+javac WhereAmI.java
+java WhereAmI
+```
+You will notice the difference when you run it on remote machine and local machine
 
 ## Settin an SSH Key
 Follow the steps to get it done!
