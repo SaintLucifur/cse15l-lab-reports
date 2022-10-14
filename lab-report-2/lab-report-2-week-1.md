@@ -53,7 +53,7 @@ java WhereAmI
 ```
 You will notice the difference when you run it on remote machine and local machine
 
-## Settin an SSH Key
+## Setting an SSH Key
 ssh-keygen creates a pair of files called the *public key* and *private key*
 Then ssh command can use the pair of files in place of your password
 Follow the steps to get it done!
@@ -81,6 +81,33 @@ The key's randomart image is:
 |             ..  |
 +----[SHA256]-----+
 ```
+
+**Note**: When given the prompt
+> Enter file in which to save the key (/Users/username/.ssh/id_rsa):
+press enter again to specify the *default path*
+
+If you're on windows, follow the extra ssh-add steps here:
+[ssh-add](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation)
+
+Now follow these steps to copy the *public key* to the .ssh directory on the server
+```
+# on client
+$ ssh cs15lfa22zz@ieng6.ucsd.edu
+<Enter Password>
+```
+
+```
+# now on server
+$ mkdir .ssh
+$ <logout>
+```
+
+```
+# back on client
+$ scp /Users/joe/.ssh/id_rsa.pub cs15lfa22@ieng6.ucsd.edu:~/.ssh/authorized_keys
+# You use your username and the path you saw in the command above
+```
+You are all set!
 ![Image](keys.png)
 
 # Faster Faster Faster!
