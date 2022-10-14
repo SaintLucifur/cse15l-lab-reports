@@ -224,4 +224,20 @@ static int[] reversed(int[] arr) {
   }
 ```
 
+* WHY?
+The reason why this bug causes this symptom is that it assigns all the zeros in the newArray
+to the original arr. It should assign the numbers in the orignal arr to the newArray. Also, it
+doesn't return the newArray, but instead returns the arr. The two bugs work together to create
+this particular symptom.
+
+The reason why this bug causes this symptom is that it doesn't make a copy of what the
+number at list[ i ] originally was before assigning the corresponding number to list[ i ].
+Therefore, when the you want to assign the number before to the second half of the list,
+it just assigns itself to itself, making something similar to the case as follow
+```
+{1,2,3,4,5} -> {5,4,3,4,5}
+//
+```
+
+
 
