@@ -238,7 +238,7 @@ this particular symptom.
 
 ## ListExamples.java *filter(List<String> list, StringChecker sc)*
 
-* My stringChecker is defined as follow
+* My stringChecker is defined to be selecting strings that have "a" in them
 ```
 class TypeChecker implements StringChecker {
     public boolean checkString(String s) {
