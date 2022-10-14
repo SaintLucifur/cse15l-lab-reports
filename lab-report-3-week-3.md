@@ -1,6 +1,7 @@
 # Part 1 Search Engine
 * Code Block
-> class Handler implements URLHandler {
+```
+class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
     String[] list = new String[50];
@@ -70,5 +71,6 @@ class SearchEngine {
         Server.start(port, new Handler());
     }
 }
+```
 
 
