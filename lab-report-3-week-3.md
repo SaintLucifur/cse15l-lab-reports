@@ -103,21 +103,40 @@ class SearchEngine {
 * Methods Called
 
 1. getPath()
+    No argument is put in this method. If the input url changes, this would change as well
+2. contains()
+    "/add" is the argument to this method
+3. getQuery()
+    No argument is put in this method. If the input url changes, this would change as well
+4. split()
+    "=" is the argument to this method. If it changes, the splitted query will vary
+    
+**Screenshot 5 (/search?s=aStringToSearch)**
+
+![Image](searchLab3.png)
+
+* Methods Called
+
+1. getPath()
 
     No argument is put in this method. If the input url changes, this would change as well
 
 2. contains()
 
-    "/add" is the argument to this method
+    "/search" is the argument to this method
 
 3. getQuery()
 
     No argument is put in this method. If the input url changes, this would change as well
 
-**Screenshot 5 (/search?s=aStringToSearch)**
+4. split()
+
+    "=" is the argument to this method. If it changes, the splitted query will vary
+
+5. equals()
 
 
-![Image](searchLab3.png)
+
 ![Image](noItemLab3.png)
 ![Image](invalidLab3.png)
 
