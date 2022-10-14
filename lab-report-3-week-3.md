@@ -81,16 +81,11 @@ class SearchEngine {
 * Methods Called
 
 1. getPath()
-
-    No argument is put in this method. If the input url changes, this would change as well
-    
+No argument is put in this method. If the input url changes, this would change as well
 2. equals()
-
-    "/" is the argument put in this method.
-
+"/" is the argument put in this method.
 3. format()
-
-    Introduction to the server is the argument as a string to this method
+Introduction to the server is the argument as a string to this method
 
 **Screenshot 2-4 (/add?s=aStringToAdd)**
 
@@ -103,14 +98,16 @@ class SearchEngine {
 * Methods Called
 
 1. getPath()
-    No argument is put in this method. If the input url changes, this would change as well
+No argument is put in this method. If the input url changes, this would change as well
 2. contains()
-    "/add" is the argument to this method
+"/add" is the argument to this method
 3. getQuery()
-    No argument is put in this method. If the input url changes, this would change as well
+No argument is put in this method. If the input url changes, this would change as well
 4. split()
-    "=" is the argument to this method. If it changes, the splitted query will vary
-    
+"=" is the argument to this method. If it changes, the splitted query will vary
+5. equals()
+"/" is the argument put in this method.
+
 **Screenshot 5 (/search?s=aStringToSearch)**
 
 ![Image](searchLab3.png)
@@ -118,21 +115,13 @@ class SearchEngine {
 * Methods Called
 
 1. getPath()
-
-    No argument is put in this method. If the input url changes, this would change as well
-
+No argument is put in this method. If the input url changes, this would change as well
 2. contains()
-
-    "/search" is the argument to this method
-
+"/search" is the argument to this method
 3. getQuery()
-
-    No argument is put in this method. If the input url changes, this would change as well
-
+No argument is put in this method. If the input url changes, this would change as well
 4. split()
-
-    "=" is the argument to this method. If it changes, the splitted query will vary
-
+"=" is the argument to this method. If it changes, the splitted query will vary
 5. equals()
 
 
