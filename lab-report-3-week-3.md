@@ -176,7 +176,7 @@ class SearchEngine {
 
 # Part 2 Bugs
 
-## ArrayExamples.java
+## ArrayExamples.java *reversed(int[] arr)*
 
 * The failure-inducing input
 
@@ -230,15 +230,46 @@ The reason why this bug causes this symptom is that it assigns all the zeros in 
 to the original arr. It should assign the numbers in the orignal arr to the newArray. Also, it
 doesn't return the newArray, but instead returns the arr. The two bugs work together to create
 this particular symptom.
-The reason why this bug causes this symptom is that it doesn't make a copy of what the
-number at list[ i ] originally was before assigning the corresponding number to list[ i ].
-Therefore, when the you want to assign the number before to the second half of the list,
-it just assigns itself to itself, making something similar to the case as follow
 
 ```
 {1,2,3,4,5} -> {5,4,3,4,5}
 // This is what happens...
 ```
 
+## ListExamples.java *filter(List<String> list, StringChecker sc)*
+
+* My stringChecker is defined as follow
+```
+class TypeChecker implements StringChecker {
+  public boolean checkString(String s) {
+    if(s.contains("a")) {
+      return true;
+    }
+    return false;
+  }
+}
+```
+
+* The failure-inducing input
+```
+@Test
+  public void testFilter(){
+    ArrayList<String> input = new ArrayList<>(Arrays.asList("a", " ", "abc", "b"));
+    ArrayList<String> result = new ArrayList<>(Arrays.asList("a", "abc"));
+
+    assertEquals(result, ListExamples.filter(input, null));
+  }
+```
+
+* The symptom
+```
+testFilter(ListTests)
+java.lang.AssertionError: expected:<[abc, a]> but was:<[a, abc]>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at ListTests.testFilter(ListTests.java:14)
+```
 
 
