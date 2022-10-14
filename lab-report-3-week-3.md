@@ -209,3 +209,19 @@ Caused by: java.lang.AssertionError: expected:<5> but was:<0>
         at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)
         ... 38 more
 ```
+
+* The bug
+
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      int temp = arr[i];
+      newArray[i] = arr[arr.length - i - 1];
+      newArray[arr.length - i -1] = temp;
+    }
+    return newArray;
+  }
+```
+
+
