@@ -236,7 +236,7 @@ this particular symptom.
 // This is what happens...
 ```
 
-## ListExamples.java *filter(List"<"String">" list, StringChecker sc)*
+## ListExamples.java *filter(List'<'String'>' list, StringChecker sc)*
 
 * My stringChecker is defined to be selecting strings that have "a" in them
 ```
