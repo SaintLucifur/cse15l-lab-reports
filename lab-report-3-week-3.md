@@ -164,15 +164,15 @@ class SearchEngine {
 
     This variable stores the splitted query
 
+**Screenshot 6 (no such item is found)**
 
 ![Image](noItemLab3.png)
 
-**Screenshot 6 (no such item is found)**
 
+**Screenshot 7 (invalid input url)**
 
 ![Image](invalidLab3.png)
 
-**Screenshot 7 (invalid input url)**
 
 # Part 2 Bugs
 
