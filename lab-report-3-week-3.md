@@ -173,3 +173,6 @@ class SearchEngine {
 ![Image](invalidLab3.png)
 
 **Screenshot 7 (invalid input url)**
+
+# Part 2 Bugs
+
