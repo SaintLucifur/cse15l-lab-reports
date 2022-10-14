@@ -166,5 +166,10 @@ class SearchEngine {
 
 
 ![Image](noItemLab3.png)
+
+**Screenshot 6 (no such item is found)**
+
+
 ![Image](invalidLab3.png)
 
+**Screenshot 7 (invalid input url)**
