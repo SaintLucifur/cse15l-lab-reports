@@ -83,12 +83,12 @@ Screenshot 1 (home directory page)
 1. getPath()
 
     URL path is the argument put in this method
-
     
 2. equals()
 
 
 3. format()
+
 
 ![Image](add1Lab3.png)
 ![Image](add2Lab3.png)
