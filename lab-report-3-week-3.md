@@ -75,6 +75,7 @@ class SearchEngine {
 
 ```
 * Methods Called
+
 ![Image](homeLab3.png)
 ![Image](add1Lab3.png)
 ![Image](add2Lab3.png)
