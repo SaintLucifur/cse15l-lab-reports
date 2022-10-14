@@ -54,6 +54,8 @@ java WhereAmI
 You will notice the difference when you run it on remote machine and local machine
 
 ## Settin an SSH Key
+ssh-keygen creates a pair of files called the *public key* and *private key*
+Then ssh command can use the pair of files in place of your password
 Follow the steps to get it done!
 ``` 
 on client (your computer)
@@ -82,7 +84,7 @@ The key's randomart image is:
 ![Image](keys.png)
 
 # Faster Faster Faster!
-* you can write a command in quotes at the end of an ssh command to directly run it on the remote server, then exit. For example, this command will log in and list the home directory on the remote server:
+* You can write a command in quotes at the end of an ssh command to directly run it on the remote server, then exit. For example, this command will log in and list the home directory on the remote server:
 > $ ssh cs15lfa22@ieng6.ucsd.edu "ls"
 ![Image](faster1.png)
 * You can use semicolons to run multiple commands on the same line in most terminals. For example, try:
