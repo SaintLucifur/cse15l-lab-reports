@@ -84,6 +84,7 @@ The key's randomart image is:
 
 **Note**: When given the prompt
 > Enter file in which to save the key (/Users/username/.ssh/id_rsa):
+
 press enter again to specify the *default path*
 
 If you're on windows, follow the extra ssh-add steps here:
