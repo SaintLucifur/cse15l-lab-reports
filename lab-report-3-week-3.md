@@ -106,7 +106,15 @@ No argument is put in this method. If the input url changes, this would change a
 4. split()
 "=" is the argument to this method. If it changes, the splitted query will vary
 5. equals()
-"/" is the argument put in this method.
+"s" is the argument put in this method. If it changes, it will be evaluted to false as the format is
+expected to be "?s="
+
+* Relevant Variables
+
+1. String[] list
+This variable stores the strings that are added. It has a maximum size of 50
+2. int index
+This variable keeps track of how many strings are put into the list
 
 **Screenshot 5 (/search?s=aStringToSearch)**
 
@@ -123,7 +131,8 @@ No argument is put in this method. If the input url changes, this would change a
 4. split()
 "=" is the argument to this method. If it changes, the splitted query will vary
 5. equals()
-
+"s" is the argument put in this method. If it changes, it will be evaluted to false as the format is
+expected to be "?s="
 
 
 ![Image](noItemLab3.png)
