@@ -176,3 +176,36 @@ class SearchEngine {
 
 # Part 2 Bugs
 
+## ArrayExamples.java
+
+* The failure-inducing input
+
+```
+@Test
+  public void testReversed_2(){
+    int[] input1 = {1,2,3,4,5};
+    assertArrayEquals(new int[]{5,4,3,2,1}, ArrayExamples.reversed(input1));
+  }
+```
+
+* The symptom
+
+```
+testReversed_2(ArrayTests)
+arrays first differed at element [0]; expected:<5> but was:<0>
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
+        at org.junit.Assert.internalArrayEquals(Assert.java:534)
+        at org.junit.Assert.assertArrayEquals(Assert.java:418)
+        at org.junit.Assert.assertArrayEquals(Assert.java:429)
+        at ArrayTests.testReversed_2(ArrayTests.java:43)
+        ... 32 trimmed
+Caused by: java.lang.AssertionError: expected:<5> but was:<0>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)
+        ... 38 more
+```
