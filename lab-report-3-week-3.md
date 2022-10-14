@@ -1,3 +1,5 @@
+# Lab Report 3
+
 # Part 1 Search Engine
 * Code Block
 
