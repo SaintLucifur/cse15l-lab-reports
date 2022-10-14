@@ -27,6 +27,7 @@ display the contents of one or multiple contents
 copy the contents
 
 ## Moving Files over SSH with scp
+First, create a file named moveMe.txt on **your computer** 
 Copy the file on your computer to the virtual machine by typing in
 > scp moveMe.txt cs15lfa22@ieng6.ucsd.edu:~/
 
