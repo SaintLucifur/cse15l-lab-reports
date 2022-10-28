@@ -218,7 +218,7 @@ Caused by: java.lang.AssertionError: expected:<5> but was:<0>
 static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
-      int temp = arr[i]; // The temp variable that stores arr[i] is missing in the original code
+      int temp = arr[i]; // The temp variable that stores arr[i] before line 17
       newArray[i] = arr[arr.length - i - 1];
       newArray[arr.length - i -1] = temp;
     }
@@ -288,7 +288,7 @@ static List<String> filter(List<String> list, StringChecker sc) {
     List<String> result = new ArrayList<>();
     for(String s: list) {
       if((sc.checkString(s))) {
-        result.add(s);
+        result.add(s); // Wrong parameters are used in line 15
       }
     }
     return result;
