@@ -218,7 +218,7 @@ Caused by: java.lang.AssertionError: expected:<5> but was:<0>
 static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
-      int temp = arr[i];
+      int temp = arr[i]; // The temp variable that stores arr[i] is missing in the original code
       newArray[i] = arr[arr.length - i - 1];
       newArray[arr.length - i -1] = temp;
     }
