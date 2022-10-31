@@ -151,3 +151,33 @@ less *-X*
 [cs15lfa22qq@ieng6-201]:biomed:430$
 ```
 * This command option will keep the less content on terminal after exiting.
+
+less *-p*
+```
+[cs15lfa22qq@ieng6-201]:biomed:444$ less -p "and" -X -N cc1856.txt
+      8         oxygen delivery and countercurrent microcirculation of the
+      9         villi [ 1]. There is increasing evidence that
+     10         gastrointestinal hypoperfusion plays an important role in
+     11         development of systemic inflammatory response and multiple
+     12         organ failure [ 1, 2]. Decreased splanchnic perfusion
+     13         precedes the appearance of the usual indicators of
+     14         hypovolemic shock, such as hypotension and lactic acidosis
+     15         [ 3, 4, 5]. Gastric intramucosal acidosis and hypercapnia
+     16         are observed during inadequate organ perfusion [ 6, 7, 8]
+     17         and are predictive of poor clinical outcome [ 9, 10, 11].
+     18         Therefore, early detection of gastrointestinal
+     19         hypoperfusion and effective treatment may improve clinical
+     20         outcome. Because gastric intubation is done in most
+     21         critically ill patients, gastric tonometry has
+     22         traditionally been used to evaluate intramucosal pH or
+     23         partial carbon dioxide tension (P CO
+     24         2 ) indirectly during the management of
+     25         critically ill patients [ 9, 10, 11, 12, 13, 14, 15].
+     26         However, gastric tonometers have some limitations. For
+     27         example, air and saline tonometers may require 10-90 min
+     28         for equilibration [ 16, 17, 18, 19]. Reliable gastric
+     29         tonome-try requires suppression of gastric acid [ 20],
+cc1856.txt
+```
+
+* This command will display the text starting with the pattern given after -p
