@@ -13,4 +13,4 @@
 ./1471-2091-2-13.txt
 // more output ...
 ```
-* This command option will only list files but not directories. That's why the biomed directory or . is not shown here.
+* This command option will only list files but not directories. That's why the biomed directory or "." is not shown here. This would be useful if the output needs to be piped into grep and grep won't have to deal with directories
