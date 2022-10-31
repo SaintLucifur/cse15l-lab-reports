@@ -90,4 +90,4 @@ grep *-i*
 // more output ...
 ```
 
-* This command option will ignore uppercase and lowercase, and output them all.
+* This command option will ignore uppercase and lowercase, and output them all. That's why when I search for "why", both "Why" and "why" show up.
