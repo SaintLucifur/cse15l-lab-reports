@@ -44,3 +44,17 @@ plos
 ```
 
 * This command option will not descend into any directories as opposed to what find normally does.
+
+## grep commman-line options
+grep *-n*
+```
+[cs15lfa22qq@ieng6-201]:technical:414$ grep -n "why" ./plos/*
+./plos/journal.pbio.0020001.txt:107:        important question, however, is why the number of publications per dollar invested in   
+./plos/journal.pbio.0020012.txt:118:        saying that it's not possible in people because I don't see why it wouldn't be…. I'm    
+./plos/journal.pbio.0020013.txt:96:        family, a fundamental question can be raised: why does a proteolytic enzyme like the     
+./plos/journal.pbio.0020028.txt:195:        people are surprised at how complicated it is, but why should it be any other way? It's an
+// more output ...
+```
+* This command option will print out which line in the text matches the argument.
+
+grep 
