@@ -95,6 +95,7 @@ grep *-i*
 ## grep commman-line options
 less *-N*
 ```
+[cs15lfa22qq@ieng6-201]:biomed:426$ less -N cc2190.txt
       1
       2
       3
