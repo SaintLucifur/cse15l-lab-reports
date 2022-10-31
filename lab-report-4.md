@@ -75,16 +75,19 @@ grep *-c*
 
 * This command option will count how many matches there are in each text.
 
-grep *-e*
+grep *-i*
 ```
-[cs15lfa22qq@ieng6-201]:technical:417$ grep -e "why" ./plos/*
+[cs15lfa22qq@ieng6-201]:technical:420$ grep -i "why" ./plos/*
+./plos/journal.pbio.0020001.txt:            Why has the number of publications per dollar invested in research and
 ./plos/journal.pbio.0020001.txt:        important question, however, is why the number of publications per dollar invested in       
+./plos/journal.pbio.0020001.txt:        they are the exception. Why, in general, do Latin American scientists often fail to reach   
 ./plos/journal.pbio.0020012.txt:        saying that it's not possible in people because I don't see why it wouldn't be…. I'm        
 ./plos/journal.pbio.0020013.txt:        family, a fundamental question can be raised: why does a proteolytic enzyme like the        
 ./plos/journal.pbio.0020028.txt:        people are surprised at how complicated it is, but why should it be any other way? It's an  
 ./plos/journal.pbio.0020042.txt:        would generate a short document highlighting why its expertise might be suitable for a      
-./plos/journal.pbio.0020043.txt:        explain why obligate sibling chimerism never evolves (except perhaps in the very limited    
+./plos/journal.pbio.0020043.txt:        What could possibly be going on here? Why should scale insects, of all creatures, have      
+./plos/journal.pbio.0020043.txt:        explain why obligate sibling chimerism never evolves (except perhaps in the very limited  
 // more output ...
 ```
 
-* This command option will truncate the matching lines to make them line up in the terminal
+* This command option will ignore uppercase and lowercase, and output them all.
