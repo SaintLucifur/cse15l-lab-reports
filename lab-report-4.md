@@ -92,7 +92,7 @@ grep *-i*
 
 * This command option will ignore uppercase and lowercase, and output them all. That's why when I search for "why", both "Why" and "why" show up.
 
-## grep commman-line options
+## less commman-line options
 less *-N*
 ```
 [cs15lfa22qq@ieng6-201]:biomed:426$ less -N cc2190.txt
