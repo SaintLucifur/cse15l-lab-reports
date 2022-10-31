@@ -91,3 +91,33 @@ grep *-i*
 ```
 
 * This command option will ignore uppercase and lowercase, and output them all. That's why when I search for "why", both "Why" and "why" show up.
+
+## grep commman-line options
+less *-N*
+```
+      1
+      2
+      3
+      4
+      5         Introduction
+      6         Enteral nutrition is increasingly being recognized as an
+      7         integral component in the management of critically ill
+      8         patients, having a major effect on morbidity and outcome.
+      9         Early enteral nutrition has been demonstrated to improve
+     10         nitrogen balance, wound healing and host immune function,
+     11         and to augment cellular antioxidant systems, decrease the
+     12         hypermetabolic response to tissue injury and preserve
+     13         intestinal mucosal integrity [ 1 2 3 4 5 6 7 ] . In a
+     14         previous study [ 8 ] , we reported that initiation of
+     15         enteral nutrition within 36 hours of surgery or admission
+     16         to hospital reduces infectious complications and hospital
+     17         length of stay (LOS).
+     18         These data suggest that enteral nutrition should be
+     19         initiated as soon as possible after admission to the
+     20         intensive care unit (ICU). Although the gastric route of
+     21         enteral feeding is easier to achieve and cheaper than
+     22         post-pyloric nutrient administration, many clinicians worry
+cc2190.txt
+```
+
+* This commmand option will display the line number while reading the text.
