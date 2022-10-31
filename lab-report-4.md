@@ -57,4 +57,20 @@ grep *-n*
 ```
 * This command option will print out which line in the text matches the argument.
 
-grep 
+grep *-c*
+```
+[cs15lfa22qq@ieng6-201]:technical:416$ grep -c "why" ./plos/*
+./plos/journal.pbio.0020001.txt:1
+./plos/journal.pbio.0020010.txt:0
+./plos/journal.pbio.0020012.txt:1
+./plos/journal.pbio.0020013.txt:1
+./plos/journal.pbio.0020019.txt:0
+./plos/journal.pbio.0020028.txt:1
+./plos/journal.pbio.0020035.txt:0
+./plos/journal.pbio.0020040.txt:0
+./plos/journal.pbio.0020042.txt:1
+./plos/journal.pbio.0020043.txt:6
+// more output ...
+```
+
+* This command option will count how many matches there are in each text.
