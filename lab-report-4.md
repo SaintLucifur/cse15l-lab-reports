@@ -121,3 +121,32 @@ cc2190.txt
 ```
 
 * This commmand option will display the line number while reading the text.
+
+less *-X*
+```
+[cs15lfa22qq@ieng6-201]:biomed:429$ less -X cc2190.txt
+
+
+
+
+        Introduction
+        Enteral nutrition is increasingly being recognized as an
+        integral component in the management of critically ill
+        patients, having a major effect on morbidity and outcome.
+        Early enteral nutrition has been demonstrated to improve
+        nitrogen balance, wound healing and host immune function,
+        and to augment cellular antioxidant systems, decrease the
+        hypermetabolic response to tissue injury and preserve
+        intestinal mucosal integrity [ 1 2 3 4 5 6 7 ] . In a
+        previous study [ 8 ] , we reported that initiation of
+        enteral nutrition within 36 hours of surgery or admission
+        to hospital reduces infectious complications and hospital
+        length of stay (LOS).
+        These data suggest that enteral nutrition should be
+        initiated as soon as possible after admission to the
+        intensive care unit (ICU). Although the gastric route of
+        enteral feeding is easier to achieve and cheaper than
+        post-pyloric nutrient administration, many clinicians worry
+[cs15lfa22qq@ieng6-201]:biomed:430$
+```
+* This command option will keep the less content on terminal after exiting.
