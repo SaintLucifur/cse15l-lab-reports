@@ -32,3 +32,15 @@ find *-type d*
 ```
 
 * This command option will only list directories but not files. That's why no .txt files are shown here.
+
+find *-prune*
+```
+[cs15lfa22qq@ieng6-201]:technical:409$ find * -prune
+911report
+biomed
+government
+notInDirFile.txt
+plos
+```
+
+* This command option will not descend into any directories as opposed to what find normally does.
