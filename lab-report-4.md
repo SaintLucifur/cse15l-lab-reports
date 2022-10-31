@@ -1,3 +1,5 @@
+## find commman-line options
+* find *-type f*
 ```
 [cs15lfa22qq@ieng6-201]:biomed:337$ find -type f -name "*.txt"
 ./1468-6708-3-1.txt
