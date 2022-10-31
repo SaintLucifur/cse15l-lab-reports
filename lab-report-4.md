@@ -13,4 +13,22 @@ find *-type f*
 ./1471-2091-2-13.txt
 // more output ...
 ```
-* This command option will only list files but not directories. That's why the biomed directory or "." is not shown here. This would be useful if the output needs to be piped into grep and grep won't have to deal with directories
+* This command option will only list files but not directories. That's why the biomed directory or "." is not shown here. This would be useful if the output needs to be piped into grep and grep won't have to deal with directories.
+
+find *-type d*
+```
+[cs15lfa22qq@ieng6-201]:technical:358$ find -type d
+.
+./911report
+./biomed
+./government
+./government/About_LSC
+./government/Alcohol_Problems
+./government/Env_Prot_Agen
+./government/Gen_Account_Office
+./government/Media
+./government/Post_Rate_Comm
+./plos
+```
+
+* This command option will only list directories but not files. That's why no .txt files are shown here.
