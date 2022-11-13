@@ -14,4 +14,15 @@
 ![Image](baseEsc.png)
 
 4. After entering `n`, the cursor jumps to the next "start"
-!
+![Image](nStar.png)
+
+5. After entering `.`, the both `ce`, `base` and `<Esc>` commands are repeated
+![Image](dot.png)
+
+6. After entering another `n`, the cursor jumps to the next "start"
+![Image](n2.png)
+
+7. After entering another `.`, the same commands are repeated
+![Image](dot2.png)
+
+8. After entering `wq`, the file is saved
