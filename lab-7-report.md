@@ -4,3 +4,5 @@
 ```
 /star <Enter> ce base <Esc> n . n . :wq
 ```
+1. After entering `/star`
+!Image[starEnter.png]
