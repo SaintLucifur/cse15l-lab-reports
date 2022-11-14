@@ -29,15 +29,22 @@
 
 # Part 2
 **Remote vs Local**
+
 My goal is to edit the start.sh bash script and add `echo "File edited"` to the script
+
 * Locally takes 150 seconds
+
 `git clone` the week6-demo directory to the local destination
+
 use GitHub Desktop and VScode to open the directory and edit the start.sh script
+
 use `scp start.sh cs15lfa22qq@ieng6.ucsd.edu:~/` to copy the file to remote machine
+
 log in and run it remotely
 
 * On remote takes 31 seconds
-Log in to use vim to directly edit the file and run it
+
+log in to use vim to directly edit the file and run it
 
 1. I prefer editing directly on the remote machine using vim, because it saves some time trying to figure out which directory the files are in if I choose to do scp
 
