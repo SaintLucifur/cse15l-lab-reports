@@ -51,3 +51,6 @@ fi
 java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore TestListExamples > stdout.txt
 ```
 
+`java` command would run the JUnit test on the student submission and use `> stdout.txt` to redirect the standard output to `stdout.txt`
+
+
