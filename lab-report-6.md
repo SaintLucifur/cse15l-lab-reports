@@ -1,7 +1,7 @@
 # grade.sh run on web
 * [My Grading Script](https://saintlucifur.github.io/cse15l-lab-reports/gradingscript.html)
 
-student-submission: *`https://github.com/ucsd-cse15l-f22/list-methods-corrected`*
+* student-submission: *`https://github.com/ucsd-cse15l-f22/list-methods-corrected`*
 
 ![Image](corrected.png)
 
@@ -45,7 +45,7 @@ else
 fi
 ```
 
-[ -s stderr.txt ] would check if `stderr.txt` is empty, if true, the exit code `$?` would be `0`, non-zero otherwise. Since all the files compile just fine, the `if` statement, [ $? -eq 0] is evaluated to be false, it goes to the `else` block, `echo` command would then print out in the terminal
+[ -s stderr.txt ] would check if `stderr.txt` is empty, if true, the exit code `$?` would be `0`, non-zero otherwise. Since all the files compile just fine, the `if` statement, `[ $? -eq 0]` is evaluated to be `false`, it goes to the `else` block, `echo` command would then print out in the terminal
 
 ```
 java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore TestListExamples > stdout.txt
