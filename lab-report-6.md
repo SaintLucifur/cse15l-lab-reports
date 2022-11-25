@@ -53,4 +53,32 @@ java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUn
 
 `java` command would run the JUnit test on the student submission and use `> stdout.txt` to redirect the standard output to `stdout.txt`
 
+```
+COUNT_FILTER_TEST=$(grep -o "ListExamples.filter(" TestListExamples.java | wc -l)
+
+COUNT_MERGE_TEST=$(grep -o "ListExamples.merge(" TestListExamples.java | wc -l)
+
+COUNT_FILTER=$(grep -o "testFilter" stdout.txt | wc -l)
+
+COUNT_MERGE=$(grep -o "testMerge" stdout.txt | wc -l)
+```
+
+`grep -o` is used find all the lines that have the matched term, `"ListExamples.filter("` for example, this would tell us all the lines that `TestListExamples` calls the method, hence all the tests. Then we use `| wc -l` to pipe the result to `wc` command that counts the number of lines, hence the number of tests. The others follow the same logic
+
+```
+PASSED_FILTER=$(($COUNT_FILTER_TEST-$COUNT_FILTER/2))
+
+PASSED_MERGE=$(($COUNT_MERGE_TEST-$COUNT_MERGE/2))
+```
+Since in `stdout.txt`, if one test fails, the name of the method would appear twice. Therefore, we divide that by 2 and use `$()` to make it an expression to calculate it
+
+```
+echo "you passed $PASSED_FILTER out of $COUNT_FILTER_TEST test for filter() method!"
+
+echo
+
+echo "you passed $PASSED_MERGE out of $COUNT_MERGE_TEST for merge() method!"
+```
+
+Finally, we print out the message to tell the user how many tests they passed
 
