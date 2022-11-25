@@ -82,3 +82,8 @@ echo "you passed $PASSED_MERGE out of $COUNT_MERGE_TEST for merge() method!"
 
 Finally, we print out the message to tell the user how many tests they passed
 
+* student-submission: *`https://github.com/ucsd-cse15l-f22/list-examples-subtle`*
+![Image](subtle.png)
+
+* student-submission: *`https://github.com/ucsd-cse15l-f22/list-methods-nested`*
+![Image](nested.png)
