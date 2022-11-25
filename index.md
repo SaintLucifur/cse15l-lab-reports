@@ -6,4 +6,4 @@ I am sleeping!
 * [Lab Report 4](https://saintlucifur.github.io/cse15l-lab-reports/lab-report-4.html)
 * [Lab Report 4 resub](https://saintlucifur.github.io/cse15l-lab-reports/lab-4-resub.html)
 * [Lab Report 5](https://saintlucifur.github.io/cse15l-lab-reports/lab-report-7/lab-7-report.html)
-* [Lab Report 6](https://saintlucifur.github.io/cse15l-lab-reports/lab-6-report.html)
+* [Lab Report 6](https://saintlucifur.github.io/cse15l-lab-reports/lab-report-6.html)
